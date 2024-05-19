@@ -1,0 +1,11 @@
+<h1>Places I've Been</h1>
+
+<div>
+  <% for place in @places %>
+    <p>
+      <%= link_to place.name, place %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New place", new_place_path %>
