@@ -10,6 +10,6 @@
     <p><%= entry.description %></p>
   <% end %>
 <% end %>
-
-<p><%= link_to "New Entry", new_entry_path({"place_id" => @place.id}) %></p>
+<br>
+<p><%= link_to "New Post", new_entry_path({"place_id" => @place.id}) %></p>
 <p><%= link_to "Back to Places", '/places' %></p>
