@@ -11,5 +11,5 @@
   <% end %>
 <% end %>
 <br>
-<p><%= link_to "New Post", new_entry_path({"place_id" => @place.id}) %></p>
-<p><%= link_to "Back to Places", '/places' %></p>
+<p><a href="<%= new_entry_path({"place_id" => @place.id}) %>">New Post</a></p>
+<p><a href="/places">Back to Places</a></p>

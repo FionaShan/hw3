@@ -3,9 +3,9 @@
 <div>
   <% for place in @places %>
     <p>
-      <%= link_to place.name, place %>
+      <a href="<%= place_path(place) %>"><%= place.name %></a>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New place", new_place_path %>
+<a href="<%= new_place_path %>">New place</a>
